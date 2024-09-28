@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="no1"></h1>
+    <h1 id="no2"></h1>
+    <h1 id="no3"></h1>
+    <button onclick="multitplication()">multi</button>
+    <button onclick="division()">div</button>
+    <button style="float: ;" onclick="power()">power</button>
+    <script>
+        var a=+prompt("enter no 1")
+        var b=+prompt("enter no 2")
+        function multitplication() {
+            var c = a * b
+            document.getElementById("no1").innerHTML = c
+        }
+        function division() {
+            var c = a / b
+            document.getElementById("no2").innerHTML = c
+
+        }
+        function power() {
+            var c = a ** b
+            document.getElementById("no3").innerHTML = c
+
+        }
+    </script>
+</body>
+
+</html>
